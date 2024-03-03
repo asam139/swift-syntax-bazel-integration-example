@@ -1,6 +1,0 @@
-$(BAZEL_OUT)/darwin_arm64-dbg/bin/external/rules_xcodeproj_generated/generator/Macros/MacrosApp/xcodeproj/xcodeproj-params/App.0.link.params
-$(BAZEL_OUT)/darwin_arm64-dbg/bin/external/rules_xcodeproj_generated/generator/Macros/MacrosApp/xcodeproj/xcodeproj-params/Tests.1.link.params
-$(BAZEL_OUT)/ios_sim_arm64-dbg-ios-sim_arm64-min15.0-applebin_ios-ST-01fde4593019/bin/Macros/MacrosApp/Lib.rules_xcodeproj.swift.compile.params
-$(BAZEL_OUT)/ios_sim_arm64-dbg-ios-sim_arm64-min15.0-applebin_ios-ST-01fde4593019/bin/Macros/MacrosApp/TestLib.rules_xcodeproj.swift.compile.params
-$(BAZEL_OUT)/ios_sim_arm64-dbg-ios-sim_arm64-min15.0-applebin_ios-ST-01fde4593019/bin/Macros/MacrosApp/rules_xcodeproj/App/Info.plist
-$(BAZEL_OUT)/ios_sim_arm64-dbg-ios-sim_arm64-min15.0-applebin_ios-ST-01fde4593019/bin/Macros/MacrosApp/rules_xcodeproj/Tests.__internal__.__test_bundle/Info.plist

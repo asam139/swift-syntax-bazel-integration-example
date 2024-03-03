@@ -34,6 +34,7 @@ ios_application(
 swift_library(
     name = "Lib",
     srcs = glob(["Sources/*.swift"]),
+    deps = ["@@//Macros"],
 )
 
 ios_unit_test(

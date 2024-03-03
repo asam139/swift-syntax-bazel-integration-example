@@ -14,6 +14,7 @@ swift_library(
     srcs = glob(["Macros/*.swift"]),
     module_name = "Macros",
     plugins = [":MacrosPlugin"],
+    visibility = ["//visibility:public"],
 )
 
 swift_library(

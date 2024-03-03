@@ -11,3 +11,6 @@
 /.ijwb/
 /.aswb/
 /.clwb/
+
+# Example app
+MacrosApp/App.xcodeproj/*
