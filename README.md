@@ -7,8 +7,6 @@
 *** Thanks again! Now go create something AMAZING! :D
 -->
 
-
-
 <!-- PROJECT SHIELDS -->
 <!--
 *** I'm using markdown "reference style" links for readability.
@@ -46,15 +44,16 @@
   </p>
 </div>
 
-
-
 <!-- TABLE OF CONTENTS -->
 <details>
   <summary>Table of Contents</summary>
   <ol>
     <li>
-      <a href="#about-the-project">About The Project</a>
+      <a href="#about-the-project">Repository</a>
       <ul>
+        <li><a href="#motivation">Introduction</a></li>
+        <li><a href="#motivation">Motivation</a></li>
+        <li><a href="#structure">Structure</a></li>
         <li><a href="#built-with">Built With</a></li>
       </ul>
     </li>
@@ -75,12 +74,34 @@
 
 
 
-<!-- ABOUT THE PROJECT -->
-## About The Project
+<!-- ABOUT -->
+## About
 
 An example how to integrate Macros using SwiftSyntax into Bazel projects.
 
-The example defines the following parts:
+### Introduction
+
+SwiftSyntax serves as a versatile tool in the realm of Swift development, offering a comprehensive set of libraries for parsing, inspecting, generating, and modifying Swift source code. Initially developed by Apple, it has evolved into an open-source project with active contributions from a diverse community. The library's documentation is readily available on [swiftpackageindex](https://swiftpackageindex.com/apple/swift-syntax/510.0.1/documentation/swiftsyntax), complemented by numerous articles in the GitHub readme. Notably, SwiftSyntax forms the backbone for essential tools like the Swift parser and swift-format.
+
+A key aspect of SwiftSyntax's functionality lies in its ability to create an Abstract Syntax Tree (AST) of Swift source code. This AST serves as a high-level, secure, and efficient API, enabling developers to interact with their code in a structured manner. Exploring the Swift AST becomes more accessible through tools such as the Swift AST Explorer.
+
+The landscape of Swift development witnessed a significant enhancement with the introduction of Swift Macros in the WWDC 2023 release of Swift 5.9. Leveraging SwiftSyntax as its foundation library, Swift Macros offer a novel approach to extending Swift by introducing new expressions, facilitating the creation of expressive libraries, and streamlining the elimination of unnecessary boilerplate code.
+
+An intriguing dimension brought forth by Swift Macros is their role in extending the compiler with custom compile-time checks. While some may argue that similar outcomes can be achieved through reusable methods, Swift Macros stand out due to their unique features, making them an exceptional tool in the developer's toolkit.
+
+
+### Motivation
+
+Swift Macros were introduced as a feature bundled within Swift Packages. This approach enhances shareability. However, it also tightens the reliance on seamless integration between Xcode and the Swift Package Manager (SPM), which, from my experience and that of others, can be less than ideal in **large projects** with **numerous dependencies**.
+
+Given the suboptimal experience offered by Apple’s ecosystem, which precludes optimization opportunities, developers uses external depencencies managers, especially Cocoapods.
+Besides they uses build systems as Bazel to automate tasks, compile and execute tests in a deterministic environment.
+
+For such reason the objective of this repository was to check the viability together pros/const of define and integrate Swift Macros into Bazel environment.
+
+### Structure
+
+The repository defines the following parts:
 
 * **MacrosPlugin**:
   * Depends of SwiftSyntax library
@@ -100,7 +121,6 @@ The example defines the following parts:
 * **iOS Example App**:
   * Depends of Macros
   * Define examples using the macros 
-
 
 ### Built With
 
