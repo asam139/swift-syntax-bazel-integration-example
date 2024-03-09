@@ -10,7 +10,7 @@ config_setting(
 
 swift_library(
     name = "Macros",
-    srcs = glob(["Macros/*.swift"]),
+    srcs = glob(["Macros/**/*.swift"]),
     module_name = "Macros",
     plugins = [":MacrosPlugin"],
     visibility = ["//visibility:public"],
@@ -18,14 +18,14 @@ swift_library(
 
 swift_library(
     name = "MacrosUniversal",
-    srcs = glob(["Macros/*.swift"]),
+    srcs = glob(["Macros/**/*.swift"]),
     module_name = "MacrosUniversal",
     plugins = [":MacrosUniversal"],
 )
 
 swift_compiler_plugin(
     name = "MacrosPlugin",
-    srcs = glob(["MacrosPlugin/*.swift"]),
+    srcs = glob(["MacrosPlugin/**/*.swift"]),
     module_name = "MacrosPlugin",
     deps = [
         "@SwiftSyntax",
@@ -42,7 +42,7 @@ universal_swift_compiler_plugin(
 
 swift_test(
     name = "MacrosPluginTests",
-    srcs = glob(["MacrosPluginTests/*.swift"]),
+    srcs = glob(["MacrosPluginTests/**/*.swift"]),
     deps = [
         ":MacrosPlugin",
         "@SwiftSyntax",

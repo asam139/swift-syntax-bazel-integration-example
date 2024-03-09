@@ -5,7 +5,8 @@ import SwiftSyntaxMacros
 @main
 struct MacrosPlugin: CompilerPlugin {
   let providingMacros: [Macro.Type] = [
-    StringifyMacro.self
+    StringifyMacro.self,
+    URLMacro.self
   ]
 }
 #endif
