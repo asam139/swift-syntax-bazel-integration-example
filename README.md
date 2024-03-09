@@ -89,25 +89,23 @@ The example defines the following parts:
     * SwiftSyntaxMacros
   * Contains macros implementation
   * Define which macros are visible to the compiler
+
 * **Macros**:
   * Depends of MacrosPlugin
   * Public macro declaration which indicates:
     * Macro name
     * Type which contains the implementation of the expansion that our macro actually performs
     * Module where the Type is defined, in our case MacrosPlugin
+
 * **iOS Example App**:
   * Depends of Macros
   * Define examples using the macros 
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
 ### Built With
 
 [![Bazel][Bazel-shield]][Bazel-url]
 [![SwiftSyntax][SwiftSyntax-shield]][SwiftSyntax-url]
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
 <!-- GETTING STARTED -->
@@ -131,10 +129,6 @@ To get a local copy up and running follow these simple example steps.
    bazel run //MacrosApp:xcodeproj
    ```
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
-
 <!-- USAGE EXAMPLES -->
 ## Usage
 
@@ -143,8 +137,6 @@ Use this space to show useful examples of how a project can be used. Additional 
 <div align="center">
   <img src="images/screenshot-stringify.png" alt="Example 1" width="512">
 </div>
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
 <!-- CONTRIBUTING -->
@@ -161,10 +153,6 @@ Don't forget to give the project a star! Thanks again!
 4. Push to the Branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
-
 <!-- LICENSE -->
 ## License
 
@@ -180,9 +168,6 @@ Saúl Moreno Abril- [@93sauu](https://twitter.com/93sauu)
 
 Project Link: [Swift Syntax Bazel Integration Example](https://github.com/asam139/swift-syntax-bazel-integration-example)
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
 
 <!-- ACKNOWLEDGMENTS -->
 ## Acknowledgments
@@ -192,9 +177,6 @@ Project Link: [Swift Syntax Bazel Integration Example](https://github.com/asam13
 * [Swift AST Explorer](https://swift-ast-explorer.com/)
 * [try! Swift NYC 2017 — Improving Swift Tools with libSyntax](https://www.youtube.com/watch?v=5ivuYGxW_3M)
 * [Swift Macros Awesome](https://github.com/krzysztofzablocki/Swift-Macros)
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 
 
 <!-- MARKDOWN LINKS & IMAGES -->
