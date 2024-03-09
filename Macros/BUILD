@@ -1,7 +1,6 @@
 load("@build_bazel_rules_swift//swift:swift.bzl", "swift_binary", "swift_library", "swift_test")
 load("@build_bazel_rules_swift//swift:swift_compiler_plugin.bzl", "swift_compiler_plugin", "universal_swift_compiler_plugin")
 
-
 licenses(["notice"])
 
 config_setting(
